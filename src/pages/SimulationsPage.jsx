@@ -454,7 +454,7 @@ export default function SimulationsPage({
           setStreamSpeed={setStreamSpeed}
         />
       )}
-      {activeTab === 'attacklab' && <AttackVisualizerLab />}
+      {activeTab === 'attacklab' && <AttackVisualizerLab processIncomingPacket={processIncomingPacket} />}
       {activeTab === 'live'     && <LivePacketTab packets={packets} />}
       {activeTab === 'rules'    && <RulesTab rules={rules} ruleHandlers={ruleHandlers} />}
     </div>
